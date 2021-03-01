@@ -1,0 +1,15 @@
+[book]
+authors = ["Shem Sedrick"]
+language = "en"
+multilingual = false
+src = "src"
+title = "ABCs of Programming"
+
+[rust]
+edition = "2018"
+
+[build]
+create-missing = true
+
+[output.html]
+additional-css = ['src/css/custom.css']
