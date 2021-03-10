@@ -18,7 +18,7 @@ jobs:
       with:
         ref: github-pages
     - name: Merge Master
-      run: git merge origin/master
+      run: git merge origin master
 
     - name: Setup mdBook
       uses: peaceiris/actions-mdbook@v1
