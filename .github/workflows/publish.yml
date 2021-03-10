@@ -15,8 +15,18 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        ref: github-pages
+    - name: Merge Master
+      run: git merge origin/master
 
     - name: Setup mdBook
         uses: peaceiris/actions-mdbook@v1
         with:
-          mdbook-version: '0.4.6'
+          mdbook-version: latest
+
+    - name: Build
+      run: mdbook build -d docs
+    - name: Add
+      run: git commit -am '$(git log -n1 --format=format:"%H")' && git push
+    
