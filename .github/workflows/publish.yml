@@ -14,14 +14,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Get master
-      uses: actions/checkout@v2
     - name: Get github-pages
       uses: actions/checkout@v2
       with:
         ref: github-pages
     - name: Merge Master
-      run: git pull origin/master
+      run: git fetch origin master && git pull master
 
     - name: Setup mdBook
       uses: peaceiris/actions-mdbook@v1
