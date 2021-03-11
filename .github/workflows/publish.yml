@@ -19,7 +19,7 @@ jobs:
       with:
         fetch-depth: 0
     - name: Merge Master
-      run: git remote -v && git fetch origin github-pages && git checkout github-pages && git merge master
+      run: git remote -v && git config user.name 'Github Action' && git config user.email 'ssedrick1@gmail.com' && git fetch origin github-pages && git checkout github-pages && git merge master
 
     - name: Setup mdBook
       uses: peaceiris/actions-mdbook@v1
