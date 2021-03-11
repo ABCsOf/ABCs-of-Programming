@@ -16,6 +16,8 @@ jobs:
     steps:
     - name: Get github-pages
       uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
     - name: Merge Master
       run: git remote -v && git fetch origin github-pages && git checkout github-pages && git merge master
 
