@@ -16,10 +16,8 @@ jobs:
     steps:
     - name: Get github-pages
       uses: actions/checkout@v2
-      with:
-        ref: github-pages
     - name: Merge Master
-      run: git fetch origin master && git pull origin/master
+      run: git remote -v && git checkout github-pages && git merge master
 
     - name: Setup mdBook
       uses: peaceiris/actions-mdbook@v1
