@@ -1,7 +1,6 @@
-<h1 class="aqua"> A is for AND</h1>
+<h1 class="aqua"> A is for Array</h1>
 
-![Image of And Gate](./images/A.svg)
+![Image of an Array](./images/A.svg)
 
-<h2 class="orchid"> AND in boolean logic means both inputs have to be true</h2>
+<h2 class="orchid"> An array is a group of items all in a row</h2>
 
-In most programming languages **AND** is shown by using two ampersands like this: `&&`. The computer will check both sides to make sure they are true.
