@@ -1,1 +1,1 @@
-# G
+# G is for Git
