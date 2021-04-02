@@ -1,6 +1,6 @@
-<h1 class="aqua"> A is for Array</h1>
+# A is for Array
 
 ![Image of an Array](./images/A.svg)
 
-<h2 class="orchid"> An array is a group of items all in a row</h2>
+## An array is a group of items all in a row
 
