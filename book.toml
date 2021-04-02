@@ -16,3 +16,8 @@ additional-css = ['src/css/custom.css']
 no-section-label = true
 git-repository-url = 'https://github.com/ABCsOf/ABCs-of-Programming'
 
+[preprocessor.page-styles.A.h1]
+class = "aqua"
+
+[preprocessor.page-styles.A.h2]
+class = "orchid"
